@@ -1,7 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { webpackBundler } from '@vuepress/bundler-webpack'
-import sidebar from "./sidebar";
+import sidebar from "./sidebar"; // 侧边栏
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -11,8 +11,8 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
-    navbar: ['/', '/get-started'],
-    sidebar: sidebar,
+    navbar: ['/', '/get-started'], // 顶部导航
+    sidebar: sidebar, // 侧边栏
   }),
 
   bundler: webpackBundler(),
